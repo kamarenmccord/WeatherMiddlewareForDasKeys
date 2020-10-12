@@ -22,17 +22,10 @@
     "order" : 1,
     "controlType" : "textbox"
   }, {
-    "Key" : "state",
-    "label" : "state abreviation",
-    "placeholer" : "What state?",
-    "required" : true,
-    "order" : 2,
-    "controlType" : "textbox"
-  }, {
     "key" : "unit",
     "label" : "what units do you prefer?",
     "required" : true,
-    "order" : 3,
+    "order" : 2,
     "controlType" : "dropdown",
     "options" : [{
       "key" : "usa",
