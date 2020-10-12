@@ -44,6 +44,12 @@
           "value": "kelvin"
         }
       ]
-    }
-  ]
+    }, {
+    "key" : "userAPIKEY",
+    "label" : "API KEY",
+    "required" : true,
+    "order" : 3,
+    "controlType" : "textbox",
+    "placeholder" : "api key here"
+    }]
 }

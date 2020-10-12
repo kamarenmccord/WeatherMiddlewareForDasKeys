@@ -12,15 +12,18 @@ const dasKeysUrl = 'http://localhost:27301';
 try {
     const city = this.config.city;
     const units = this.config.units;
+    const userAPIKEY = this.config.keys;
 
 } catch {
     const city = 'New York City';
     const units = 'standard';
+};
 
-}
+
+
 
 //zoneid's
-const KEY_0 = '10, 2';
+const KEY_O = '10, 2';
 const KEY_P = '11, 2';
 const KEY_L = '11, 3';
 
