@@ -18,6 +18,12 @@ try {
     const units = 'standard';
 
 }
+
+//zoneid's
+const KEY_0 = '10, 2';
+const KEY_P = '11, 2';
+const KEY_L = '11, 3';
+
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKeys.parsed.apiKey}&units=${units}`;
 
 // push to das keys api
@@ -99,7 +105,7 @@ const main = (data) => {
         var signal = {
             'name': 'HOT alert',
             'message' : `today there will be a high of ${tempMax} degrees, set those windows`,
-            'zoneId' : 'KEY_P',
+            'zoneId' : KEY_P,
             'color' : '#ff0000',
             'pid' : 'DK5QPID', // default pid
             'effect' : 'BLINK',
@@ -112,7 +118,7 @@ const main = (data) => {
         var signal = {
             'name': 'cold alert',
             'message' : `tonight will be ${tempMin} degrees close up your windows`,
-            'zoneId' : 'KEY_l',
+            'zoneId' : KEY_L,
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
             'effect' : 'BLINK',
@@ -126,7 +132,7 @@ const main = (data) => {
         var signal = {
             'name': 'cold alert',
             'message' : `today will be ${tempMax} degrees close up your windows`,
-            'zoneId' : 'KEY_O',
+            'zoneId' : KEY_O,
             'color' : '#FF0000',
             'pid' : 'DK5QPID', // default pid
             'effect' : 'BLINK',
@@ -137,7 +143,7 @@ const main = (data) => {
         var signal = {
             'name': 'cold alert',
             'message' : `tonight will be ${tempMin} degrees, get our those blankets`,
-            'zoneId' : 'KEY_O',
+            'zoneId' : KEY_O,
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
             'effect' : 'BLINK',
@@ -148,7 +154,7 @@ const main = (data) => {
         var signal = {
             'name': 'weather alert',
             'message' : `today will be a nice day around ${temp} degrees`,
-            'zoneId' : 'KEY_O',
+            'zoneId' : KEY_O,
             'color' : '#00FF00',
             'pid' : 'DK5QPID', // default pid
             'effect' : 'SET_COLOR',
