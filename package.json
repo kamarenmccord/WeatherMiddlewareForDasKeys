@@ -9,35 +9,41 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "daskeyboard-applet": "^2.11.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2"
   },
-  "questions":[{
-    "key": "city",
-    "label" : "city",
-    "placeholder" : "what city?",
-    "required" : true,
-    "order" : 1,
-    "controlType" : "textbox"
-  }, {
-    "key" : "unit",
-    "label" : "what units do you prefer?",
-    "required" : true,
-    "order" : 2,
-    "controlType" : "dropdown",
-    "options" : [{
-      "key" : "usa",
-      "value" : "standard"
-    }, {
-      "key" : "other",
-      "value" : "metric"
-    }, {
-      "key" : "science",
-      "value" : "kelvin"
-    }]
-
-  }
-]
+  "questions": [
+    {
+      "key": "city",
+      "label": "city",
+      "placeholder": "what city?",
+      "required": true,
+      "order": 1,
+      "controlType": "textbox"
+    },
+    {
+      "key": "unit",
+      "label": "what units do you prefer?",
+      "required": true,
+      "order": 2,
+      "controlType": "dropdown",
+      "options": [
+        {
+          "key": "usa",
+          "value": "standard"
+        },
+        {
+          "key": "other",
+          "value": "metric"
+        },
+        {
+          "key": "science",
+          "value": "kelvin"
+        }
+      ]
+    }
+  ]
 }

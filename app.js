@@ -1,5 +1,6 @@
 
 const { response } = require('express');
+const q = require('daskeyboard-applet');
 const fetch = require('node-fetch');
 const request = require('request');
 const apiKeys = require('dotenv').config();
@@ -7,9 +8,16 @@ const dasKeysUrl = 'http://localhost:27301';
 
 
 // set up local varables
-const city = 'abilene';
-const units = 'standard';
 
+try {
+    const city = this.config.city;
+    const units = this.config.units;
+
+} catch {
+    const city = 'New York City';
+    const units = 'standard';
+
+}
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKeys.parsed.apiKey}&units=${units}`;
 
 // push to das keys api
@@ -94,6 +102,7 @@ const main = (data) => {
             'zoneId' : 'KEY_P',
             'color' : '#ff0000',
             'pid' : 'DK5QPID', // default pid
+            'action' : 'FLASH',
         }
         alerts.push(signal);
     };
@@ -106,6 +115,7 @@ const main = (data) => {
             'zoneId' : 'KEY_l',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
+            'action' : 'FLASH',
         }
         alerts.push(signal);
     };
@@ -119,6 +129,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#FF0000',
             'pid' : 'DK5QPID', // default pid
+            'action' : 'FLASH',
         }
         alerts.push(signal);
     } else if (getAlertLevel(data.temp) == 'cold') {
@@ -129,6 +140,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
+            'action' : 'FLASH',
         }
         alerts.push(signal);
     } else {
@@ -139,6 +151,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#00FF00',
             'pid' : 'DK5QPID', // default pid
+            'action' : 'DRAW',
         }
         alerts.push(signal);
     }
