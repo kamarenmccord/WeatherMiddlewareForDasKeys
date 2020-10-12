@@ -90,7 +90,7 @@ const main = (data) => {
         //build a hot alert
         var signal = {
             'name': 'HOT alert',
-            'message' : `today will be ${tempMax} degrees close up your windows`,
+            'message' : `today there will be a high of ${tempMax} degrees, set those windows`,
             'zoneId' : 'KEY_P',
             'color' : '#ff0000',
             'pid' : 'DK5QPID', // default pid
@@ -102,7 +102,7 @@ const main = (data) => {
         //build a cold alert
         var signal = {
             'name': 'cold alert',
-            'message' : `today will be ${tempMin} degrees close up your windows`,
+            'message' : `tonight will be ${tempMin} degrees close up your windows`,
             'zoneId' : 'KEY_l',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
@@ -125,7 +125,7 @@ const main = (data) => {
         // build cold alert on main key
         var signal = {
             'name': 'cold alert',
-            'message' : `today will be ${tempMin} degrees get our those blankets`,
+            'message' : `tonight will be ${tempMin} degrees, get our those blankets`,
             'zoneId' : 'KEY_O',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
