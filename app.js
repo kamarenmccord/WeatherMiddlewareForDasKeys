@@ -102,7 +102,7 @@ const main = (data) => {
             'zoneId' : 'KEY_P',
             'color' : '#ff0000',
             'pid' : 'DK5QPID', // default pid
-            'action' : 'FLASH',
+            'effect' : 'BLINK',
         }
         alerts.push(signal);
     };
@@ -115,7 +115,7 @@ const main = (data) => {
             'zoneId' : 'KEY_l',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
-            'action' : 'FLASH',
+            'effect' : 'BLINK',
         }
         alerts.push(signal);
     };
@@ -129,7 +129,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#FF0000',
             'pid' : 'DK5QPID', // default pid
-            'action' : 'FLASH',
+            'effect' : 'BLINK',
         }
         alerts.push(signal);
     } else if (getAlertLevel(data.temp) == 'cold') {
@@ -140,7 +140,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#0000FF',
             'pid' : 'DK5QPID', // default pid
-            'action' : 'FLASH',
+            'effect' : 'BLINK',
         }
         alerts.push(signal);
     } else {
@@ -151,7 +151,7 @@ const main = (data) => {
             'zoneId' : 'KEY_O',
             'color' : '#00FF00',
             'pid' : 'DK5QPID', // default pid
-            'action' : 'DRAW',
+            'effect' : 'SET_COLOR',
         }
         alerts.push(signal);
     }
