@@ -3,4 +3,4 @@
 <br>
 <p>This runs on nodejs</p>
 <p>install dependencies with "npm i" in the main directory</p>
-<h3>In order to use this you will need an api key from openWeatherMap.org</h3>
+<h3>In order to use this you will need an api key from <a href='https://openweathermap.org/'>openWeatherMap.org</a></h3>
